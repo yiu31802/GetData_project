@@ -1,0 +1,30 @@
+DATA COLLECTION DESCRIPTION
+
+Junji Shimagaki
+
+Raw Data source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Summary: The purpose of cleaning the data above is to summarize 30 volunteer's activity measurements
+of different variables depending on different activity kinds.
+
+
+CODEBOOK FOR 'dataset.txt'
+
+VARIABLE NAME                   VARIABLE                VALUES OR
+AND POSITION                                            EXPLANATION
+
+
+subject         1               Person's identity       Labeled from 1-30
+label           2               Types of activity       One of six activities
+                                                        {WALKING/WALKING_UPSTAIRS/WALKING_DOWNSTAIRS
+                                                        /SITTING/STANDING/LAYING}
+
+
+[Body|Gyro]
+[Acceleration                   Different kinds of      Numeric value within [-1, 1] (normalized)
+|Gyro][XYZ]     3-42            measurements
+
+
+FFT[Body|Gyro]
+[Acceleration                   Different kinds of      Numeric value within [-1, 1] (normalized)
+|Gyro][XYZ]     43-81            FFT measurements
